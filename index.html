@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulcê</title>
+
+    <link rel="stylesheet" href="styleinicio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site">
+
+        <header>
+            <div id="icones">
+                <button id="configuracoes" type="button" aria-label="Dados do usuário" title="Dados do usuário">
+                    ⚙
+                </button>
+
+                <button id="carrinho" type="button" aria-label="Abrir carrinho" title="Carrinho de compras">
+                    🛒
+                    <span id="quantidadeCarrinho">0</span>
+                </button>
+
+                <button id="modoTema" type="button" aria-label="Alternar modo claro e escuro" title="Alternar tema">
+                    ☾
+                </button>
+            </div>
+
+            <nav>
+                <ul id="menu">
+                    <li class="liMenu"><a href="Index.html">HOME</a></li>
+                    <li class="liMenu"><a href="sobre.html">SOBRE</a></li>
+                    <li class="liMenu"><a href="produtos.html">PRODUTOS</a></li>
+                    <li class="liMenu"><a href="promocoes.html">PROMOÇÕES</a></li>
+                    <li class="liMenu"><a href="login.html">ENTRAR</a></li>
+                    <li class="liMenu" id="cadastro"><a href="login.html#cadastro">CADASTRAR</a></li>
+                </ul>
+            </nav>
+
+            <form id="formPesquisa" role="search">
+                <input
+                    type="search"
+                    id="barraPesquisa"
+                    placeholder="Pesquise aqui seus doces favoritos..."
+                    maxlength="80"
+                    aria-label="Pesquisar doces"
+                >
+                <button id="botaoPesquisa" type="submit" aria-label="Pesquisar">
+                    ⌕
+                </button>
+            </form>
+        </header>
+
+        <main>
+            <section id="apresentacao">
+                <div class="boasVindas">
+                    <p>BEM-VINDO À NOSSA LOJINHA</p>
+
+                    <h1>UM MUNDO DE DOCES PARA VOCÊ!</h1>
+
+                    <p>Seu próximo doce favorito está aqui.</p>
+
+                    <a href="produtos.html" class="botaoProdutos">
+                        VER PRODUTOS <span>⟶</span>
+                    </a>
+                </div>
+
+                <div class="destaques">
+                    <a href="produtos.html?categoria=Bolos" class="cardDoce">
+                    
+                        <img src="Design sem nome.png" id="hahaha">
+                        <div class="imagemDoce">Bolos</div>
+                    </a>
+
+                    <a href="produtos.html?categoria=Balas" class="cardDoce">
+                        
+                        <img src="Design sem nome (1).png" id="hahaha">
+                        <div class="imagemDoce">Balas</div>
+                    </a>
+
+                    <a href="produtos.html?categoria=Biscoitos" class="cardDoce">
+                       
+                        <img src="Design sem nome (2).png" id="hahaha">
+                        <div class="imagemDoce">Biscoitos</div>
+                    </a>
+
+                    <a href="produtos.html?categoria=Brigadeiros" class="cardDoce">
+                        
+                        <img src="Design sem nome (3).png" id="hahaha">
+                        <div class="imagemDoce">Brigadeiros</div>
+                    </a>
+                </div>
+            </section>
+
+            <section id="categorias">
+                <h2>Explore por categoria! 💙</h2>
+
+                <div class="listaCategorias">
+                    <a href="produtos.html?categoria=Bolos" class="categoria">
+                        <span><img src="" alt=""></span>
+                        <span>Bolos</span>
+                    </a>
+
+                    <a href="produtos.html?categoria=Balas" class="categoria">
+                        <span><img src="" alt=""></span>
+                        <span>Balas</span>
+                    </a>
+
+                    <a href="produtos.html?categoria=Biscoitos" class="categoria">
+                        <span><img src="" alt=""></span>
+                        <span>Biscoitos</span>
+                    </a>
+
+                    <a href="produtos.html?categoria=Brigadeiros" class="categoria">
+                        <span><img src="" alt=""></span>
+                        <span>Brigadeiros</span>
+                    </a>
+
+                    <a href="produtos.html?categoria=Donuts" class="categoria">
+                        <span><img src="" alt=""></span>
+                        <span>Donuts</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="sobreLoja">
+                <h2>Um doce especial para cada momento!</h2>
+    
+                <p>
+                    Encontre seus doces favoritos, descubra novos sabores
+                    e deixe seu dia mais gostoso.
+                </p>
+                <a href="sobre.html" class="linkPagina">CONHEÇA NOSSA LOJA</a>
+            </section>
+
+            <section id="promocoes">
+                <h2>Ofertas deliciosas!</h2>
+                <p>Confira nossas promoções e encontre seu próximo doce favorito.</p>
+                <a href="promocoes.html" class="linkPagina">VER PROMOÇÕES</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>Dulcê</p>
+            <p>Um mundo de doces para você!</p>
+
+            <nav aria-label="Links do rodapé">
+                <a href="Index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="promocoes.html">Promoções</a>
+                <a href="login.html">Entrar / Cadastrar</a>
+            </nav>
+
+            <p>&copy; 2026 Dulcê. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+    <div id="janelaCarrinho" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloCarrinho">
+            <button class="fecharJanela" type="button" data-fechar="janelaCarrinho" aria-label="Fechar">×</button>
+            <h2 id="tituloCarrinho">Meu carrinho 🛒</h2>
+            <div id="itensCarrinho">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+            <p>Total: <strong id="totalCarrinho">R$ 0,00</strong></p>
+            <a href="carrinho.html" class="botaoProdutos">VER CARRINHO COMPLETO</a>
+        </section>
+    </div>
+
+    <div id="janelaUsuario" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloUsuario">
+            <button class="fecharJanela" type="button" data-fechar="janelaUsuario" aria-label="Fechar">×</button>
+            <h2 id="tituloUsuario">Dados do usuário</h2>
+            <p>Entre na sua conta para visualizar seus dados pessoais.</p>
+            <a href="login.html" class="botaoProdutos">ENTRAR / CADASTRAR</a>
+            <a href="configuracoes.html" class="linkPagina">MEU PERFIL</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

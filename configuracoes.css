@@ -1,0 +1,496 @@
+
+:root {
+    --fundo-principal: #242329;
+    --fundo-header: #B9D5FF;
+    --fundo-card: #F8DCE8;
+    --azul: #72A9FB;
+    --azul-escuro: #477FCB;
+    --texto: #242329;
+    --texto-claro: #FFFFFF;
+    --borda: #D9D9E2;
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--fundo-principal);
+    color: var(--texto-claro);
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    min-height: 90px;
+    padding: 15px 5%;
+    background-color: var(--fundo-header);
+    color: var(--texto);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+#icones {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+#icones button {
+    padding: 5px;
+    border: none;
+    background: transparent;
+    color: var(--texto);
+    font-size: 23px;
+    transition: transform 0.2s;
+}
+
+#icones button:hover {
+    transform: scale(1.12);
+}
+
+#quantidadeCarrinho {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.liMenu a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.liMenu a:hover {
+    color: var(--azul-escuro);
+}
+
+#formPesquisa {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 38px;
+    overflow: hidden;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+#barraPesquisa {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--texto);
+    font-size: 12px;
+}
+
+#botaoPesquisa {
+    height: 100%;
+    padding: 0 12px;
+    border: none;
+    background-color: var(--azul);
+    color: var(--texto);
+    font-size: 22px;
+}
+
+#botaoPesquisa:hover {
+    background-color: var(--azul-escuro);
+    color: #FFFFFF;
+}
+
+.bannerPerfil {
+    padding: 45px 6% 25px;
+    text-align: center;
+}
+
+.bannerPerfil h1 {
+    margin-bottom: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(28px, 4vw, 40px);
+}
+
+.bannerPerfil p {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.conteudoPerfil {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 30px 65px;
+}
+
+.cartaoPerfil {
+    padding: 30px;
+    border-radius: 14px;
+    background-color: var(--fundo-card);
+    color: var(--texto);
+    box-shadow: var(--sombra);
+}
+
+.fotoPerfil {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--azul);
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    font-size: 45px;
+}
+
+.cartaoPerfil h2 {
+    margin-bottom: 25px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 21px;
+    text-align: center;
+}
+
+#formPerfil {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.campoPerfil {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campoPerfil label {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.campoPerfil input,
+.campoPerfil select {
+    width: 100%;
+    min-height: 43px;
+    padding: 10px 12px;
+    border: 1px solid var(--borda);
+    border-radius: 7px;
+    outline: none;
+    background-color: #FFFFFF;
+    color: var(--texto);
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.campoPerfil input:focus,
+.campoPerfil select:focus {
+    border-color: var(--azul-escuro);
+    box-shadow: 0 0 0 3px rgba(114, 169, 251, 0.25);
+}
+
+.campoPerfil input::placeholder {
+    color: #888888;
+}
+
+.camposDuplos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.botaoSalvar {
+    width: 100%;
+    min-height: 46px;
+    margin-top: 8px;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--azul);
+    color: var(--texto);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.botaoSalvar:hover {
+    background-color: var(--azul-escuro);
+    color: #FFFFFF;
+}
+
+#mensagemPerfil {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.opcoesPerfil {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.cartaoOpcao {
+    min-height: 130px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 12px;
+    background-color: var(--fundo-card);
+    color: var(--texto);
+    box-shadow: var(--sombra);
+    transition: transform 0.2s;
+}
+
+.cartaoOpcao:hover {
+    transform: translateY(-4px);
+}
+
+.iconeOpcao {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--azul);
+    font-size: 25px;
+}
+
+.cartaoOpcao h3 {
+    margin-bottom: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+}
+
+.cartaoOpcao p {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.linkOpcao {
+    color: var(--azul-escuro);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.linkOpcao:hover {
+    text-decoration: underline;
+}
+
+footer {
+    padding: 35px 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--fundo-header);
+    color: var(--texto);
+    text-align: center;
+}
+
+footer p:first-child {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+footer nav a {
+    font-size: 13px;
+}
+
+footer nav a:hover {
+    color: var(--azul-escuro);
+}
+
+.janelaFundo {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.janelaFundo[hidden] {
+    display: none;
+}
+
+.janela {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: var(--fundo-card);
+    color: var(--texto);
+    box-shadow: var(--sombra);
+}
+
+.janela h2 {
+    margin-bottom: 20px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.janela p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.fecharJanela {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: transparent;
+    color: var(--texto);
+    font-size: 28px;
+}
+
+body.tema-claro {
+    --fundo-principal: #F7F7FA;
+    --fundo-header: #B9D5FF;
+    --fundo-card: #F8DCE8;
+    --texto: #242329;
+    --texto-claro: #242329;
+    --borda: #D9D9E2;
+}
+
+body.tema-claro .bannerPerfil {
+    color: var(--texto);
+}
+
+@media (max-width: 1000px) {
+    header {
+        justify-content: center;
+    }
+
+    #formPesquisa {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .conteudoPerfil {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 18px 5%;
+        gap: 20px;
+    }
+
+    #icones {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #menu {
+        gap: 12px 16px;
+    }
+
+    .liMenu a {
+        font-size: 11px;
+    }
+
+    #formPesquisa {
+        max-width: none;
+    }
+
+    .bannerPerfil {
+        padding: 35px 6% 20px;
+    }
+
+    .bannerPerfil h1 {
+        font-size: 28px;
+    }
+
+    .conteudoPerfil {
+        padding: 20px 6% 40px;
+    }
+
+    .cartaoPerfil {
+        padding: 22px 18px;
+    }
+
+    .camposDuplos {
+        grid-template-columns: 1fr;
+    }
+
+    .opcoesPerfil {
+        grid-template-columns: 1fr;
+    }
+
+    .cartaoOpcao {
+        padding: 18px;
+    }
+
+    footer nav {
+        gap: 12px;
+    }
+
+    footer nav a {
+        font-size: 12px;
+    }
+
+    .janela {
+        padding: 25px 20px;
+    }
+}

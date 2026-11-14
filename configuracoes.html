@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Perfil | Dulcê</title>
+
+    <link rel="stylesheet" href="configuracoes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site">
+
+        <header>
+            <div id="icones">
+                <button id="configuracoes" type="button" aria-label="Dados do usuário" title="Dados do usuário">
+                    ⚙
+                </button>
+
+                <button id="carrinho" type="button" aria-label="Abrir carrinho" title="Carrinho de compras">
+                    🛒 <span id="quantidadeCarrinho">0</span>
+                </button>
+
+                <button id="modoTema" type="button" aria-label="Alternar tema" title="Alternar tema">
+                    ☾
+                </button>
+            </div>
+
+            <nav>
+                <ul id="menu">
+                    <li class="liMenu"><a href="Index.html">HOME</a></li>
+                    <li class="liMenu"><a href="sobre.html">SOBRE</a></li>
+                    <li class="liMenu"><a href="produtos.html">PRODUTOS</a></li>
+                    <li class="liMenu"><a href="promocoes.html">PROMOÇÕES</a></li>
+                    <li class="liMenu"><a href="login.html">ENTRAR</a></li>
+                    <li class="liMenu" id="cadastro"><a href="login.html#cadastroForm">CADASTRAR</a></li>
+                </ul>
+            </nav>
+
+            <form id="formPesquisa" role="search">
+                <input
+                    type="search"
+                    id="barraPesquisa"
+                    placeholder="Pesquise aqui seus doces favoritos..."
+                    maxlength="80"
+                    aria-label="Pesquisar doces"
+                >
+                <button id="botaoPesquisa" type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+        </header>
+
+        <main>
+            <section class="bannerPerfil">
+                <p class="subtitulo">SUA CONTA</p>
+                <h1>MEU PERFIL ⚙</h1>
+                <p>Consulte e atualize seus dados pessoais.</p>
+            </section>
+
+            <section class="conteudoPerfil">
+                <div class="cartaoPerfil">
+                    <div class="fotoPerfil">
+                        <span>👤</span>
+                    </div>
+
+                    <h2>Meus dados</h2>
+                    <p>Deixe suas informações atualizadas para facilitar seus pedidos.</p>
+
+                    <form id="formPerfil">
+                        <div class="campoPerfil">
+                            <label for="nomePerfil">Nome completo</label>
+                            <input
+                                type="text"
+                                id="nomePerfil"
+                                name="nomePerfil"
+                                maxlength="80"
+                                placeholder="Digite seu nome completo"
+                                required
+                            >
+                        </div>
+
+                        <div class="campoPerfil">
+                            <label for="emailPerfil">E-mail</label>
+                            <input
+                                type="email"
+                                id="emailPerfil"
+                                name="emailPerfil"
+                                maxlength="100"
+                                placeholder="seuemail@email.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="campoPerfil">
+                            <label for="cpfPerfil">CPF</label>
+                            <input
+                                type="text"
+                                id="cpfPerfil"
+                                name="cpfPerfil"
+                                maxlength="14"
+                                inputmode="numeric"
+                                placeholder="000.000.000-00"
+                            >
+                        </div>
+
+                        <div class="campoPerfil">
+                            <label for="telefonePerfil">Telefone</label>
+                            <input
+                                type="tel"
+                                id="telefonePerfil"
+                                name="telefonePerfil"
+                                maxlength="15"
+                                inputmode="numeric"
+                                placeholder="(00) 00000-0000"
+                            >
+                        </div>
+
+                        <div class="campoPerfil">
+                            <label for="dataNascimento">Data de nascimento</label>
+                            <input
+                                type="date"
+                                id="dataNascimento"
+                                name="dataNascimento"
+                            >
+                        </div>
+
+                        <div class="campoPerfil">
+                            <label for="cepPerfil">CEP</label>
+                            <input
+                                type="text"
+                                id="cepPerfil"
+                                name="cepPerfil"
+                                maxlength="9"
+                                inputmode="numeric"
+                                placeholder="00000-000"
+                            >
+                        </div>
+
+                        <div class="campoPerfil">
+                            <label for="enderecoPerfil">Endereço</label>
+                            <input
+                                type="text"
+                                id="enderecoPerfil"
+                                name="enderecoPerfil"
+                                maxlength="120"
+                                placeholder="Rua, avenida..."
+                            >
+                        </div>
+
+                        <div class="camposDuplos">
+                            <div class="campoPerfil">
+                                <label for="numeroPerfil">Número</label>
+                                <input
+                                    type="text"
+                                    id="numeroPerfil"
+                                    name="numeroPerfil"
+                                    maxlength="10"
+                                    inputmode="numeric"
+                                    placeholder="Nº"
+                                >
+                            </div>
+
+                            <div class="campoPerfil">
+                                <label for="complementoPerfil">Complemento</label>
+                                <input
+                                    type="text"
+                                    id="complementoPerfil"
+                                    name="complementoPerfil"
+                                    maxlength="60"
+                                    placeholder="Apto, casa..."
+                                >
+                            </div>
+                        </div>
+
+                        <div class="campoPerfil">
+                            <label for="cidadePerfil">Cidade</label>
+                            <input
+                                type="text"
+                                id="cidadePerfil"
+                                name="cidadePerfil"
+                                maxlength="60"
+                                placeholder="Digite sua cidade"
+                            >
+                        </div>
+
+                        <div class="campoPerfil">
+                            <label for="estadoPerfil">Estado</label>
+                            <select id="estadoPerfil" name="estadoPerfil">
+                                <option value="">Selecione seu estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" id="salvarPerfil" class="botaoSalvar">
+                            SALVAR ALTERAÇÕES
+                        </button>
+
+                        <p id="mensagemPerfil" aria-live="polite"></p>
+                    </form>
+                </div>
+
+                <div class="opcoesPerfil">
+                    <article class="cartaoOpcao">
+                        <span class="iconeOpcao">🛍️</span>
+                        <h3>Meus pedidos</h3>
+                        <p>Consulte seus pedidos realizados.</p>
+                        <a href="pedidos.html" class="linkOpcao">VER PEDIDOS</a>
+                    </article>
+
+                    <article class="cartaoOpcao">
+                        <span class="iconeOpcao">🛒</span>
+                        <h3>Meu carrinho</h3>
+                        <p>Confira os doces que você selecionou.</p>
+                        <a href="carrinho.html" class="linkOpcao">ABRIR CARRINHO</a>
+                    </article>
+
+                    <article class="cartaoOpcao">
+                        <span class="iconeOpcao">🔐</span>
+                        <h3>Minha conta</h3>
+                        <p>Acesse a página de login e cadastro.</p>
+                        <a href="login.html" class="linkOpcao">ACESSAR CONTA</a>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Dulcê</p>
+            <p>Um mundo de doces para você!</p>
+
+            <nav aria-label="Links do rodapé">
+                <a href="Index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="promocoes.html">Promoções</a>
+                <a href="login.html">Entrar / Cadastrar</a>
+            </nav>
+
+            <p>&copy; 2026 Dulcê. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+    <div id="janelaCarrinho" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloCarrinho">
+            <button class="fecharJanela" type="button" data-fechar="janelaCarrinho" aria-label="Fechar">×</button>
+
+            <h2 id="tituloCarrinho">Meu carrinho 🛒</h2>
+
+            <div id="itensCarrinho">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+
+            <p>Total: <strong id="totalCarrinho">R$ 0,00</strong></p>
+
+            <a href="carrinho.html" class="botaoProdutos">VER CARRINHO COMPLETO</a>
+        </section>
+    </div>
+
+    <div id="janelaUsuario" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloUsuario">
+            <button class="fecharJanela" type="button" data-fechar="janelaUsuario" aria-label="Fechar">×</button>
+
+            <h2 id="tituloUsuario">Dados do usuário</h2>
+
+            <p>Acesse seu perfil para consultar ou atualizar suas informações.</p>
+
+            <a href="configuracoes.html" class="botaoProdutos">MEU PERFIL</a>
+            <a href="login.html" class="linkPagina">ENTRAR / CADASTRAR</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

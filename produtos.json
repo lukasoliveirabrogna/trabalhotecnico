@@ -1,0 +1,84 @@
+
+[
+    {
+      "nome": "Bolo de Chocolate",
+      "descricao": "Bolo fofinho de chocolate com cobertura cremosa de brigadeiro.",
+      "categoria": "Bolos",
+      "preco": 45.00,
+      "estoque": 15,
+      "imagem": "bolo-chocolate.jpg"
+    },
+    {
+      "nome": "Bolo de Morango",
+      "descricao": "Bolo recheado com creme branco e morangos frescos.",
+      "categoria": "Bolos",
+      "preco": 55.00,
+      "estoque": 10,
+      "imagem": "bolo-morango.jpg"
+    },
+    {
+      "nome": "Brigadeiro Tradicional",
+      "descricao": "Brigadeiro artesanal coberto com granulado de chocolate.",
+      "categoria": "Docinhos",
+      "preco": 3.50,
+      "estoque": 100,
+      "imagem": "brigadeiro.jpg"
+    },
+    {
+      "nome": "Beijinho",
+      "descricao": "Doce de leite condensado com coco ralado.",
+      "categoria": "Docinhos",
+      "preco": 3.50,
+      "estoque": 80,
+      "imagem": "beijinho.jpg"
+    },
+    {
+      "nome": "Brownie de Chocolate",
+      "descricao": "Brownie artesanal com casquinha crocante e interior macio.",
+      "categoria": "Brownies",
+      "preco": 8.00,
+      "estoque": 30,
+      "imagem": "brownie.jpg"
+    },
+    {
+      "nome": "Cupcake de Baunilha",
+      "descricao": "Cupcake de baunilha com cobertura de buttercream.",
+      "categoria": "Cupcakes",
+      "preco": 9.00,
+      "estoque": 25,
+      "imagem": "cupcake-baunilha.jpg"
+    },
+    {
+      "nome": "Torta de Limão",
+      "descricao": "Massa crocante com creme de limão e cobertura de merengue.",
+      "categoria": "Tortas",
+      "preco": 48.00,
+      "estoque": 8,
+      "imagem": "torta-limao.jpg"
+    },
+    {
+      "nome": "Cookie com Gotas de Chocolate",
+      "descricao": "Cookie amanteigado com gotas de chocolate meio amargo.",
+      "categoria": "Cookies",
+      "preco": 7.00,
+      "estoque": 40,
+      "imagem": "cookie-chocolate.jpg"
+    },
+    {
+      "nome": "Pudim de Leite Condensado",
+      "descricao": "Pudim cremoso de leite condensado com calda de caramelo.",
+      "categoria": "Sobremesas",
+      "preco": 35.00,
+      "estoque": 12,
+      "imagem": "pudim.jpg"
+    },
+    {
+      "nome": "Cone Trufado",
+      "descricao": "Casquinha crocante recheada com brigadeiro e coberta com chocolate.",
+      "categoria": "Doces Especiais",
+      "preco": 10.00,
+      "estoque": 20,
+      "imagem": "cone-trufado.jpg"
+    }
+  ]
+  

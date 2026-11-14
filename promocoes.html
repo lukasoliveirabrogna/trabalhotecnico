@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Promoções | Dulcê</title>
+
+    <link rel="stylesheet" href="promocoes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site">
+
+        <header>
+            <div id="icones">
+                <button id="configuracoes" type="button" aria-label="Dados do usuário" title="Dados do usuário">
+                    ⚙
+                </button>
+
+                <button id="carrinho" type="button" aria-label="Abrir carrinho" title="Carrinho de compras">
+                    🛒 <span id="quantidadeCarrinho">0</span>
+                </button>
+
+                <button id="modoTema" type="button" aria-label="Alternar tema" title="Alternar tema">
+                    ☾
+                </button>
+            </div>
+
+            <nav>
+                <ul id="menu">
+                    <li class="liMenu"><a href="Index.html">HOME</a></li>
+                    <li class="liMenu"><a href="sobre.html">SOBRE</a></li>
+                    <li class="liMenu"><a href="produtos.html">PRODUTOS</a></li>
+                    <li class="liMenu"><a href="promocoes.html">PROMOÇÕES</a></li>
+                    <li class="liMenu"><a href="login.html">ENTRAR</a></li>
+                    <li class="liMenu" id="cadastro"><a href="login.html#cadastro">CADASTRAR</a></li>
+                </ul>
+            </nav>
+
+            <form id="formPesquisa" role="search">
+                <input
+                    type="search"
+                    id="barraPesquisa"
+                    placeholder="Pesquise aqui seus doces favoritos..."
+                    maxlength="80"
+                    aria-label="Pesquisar doces"
+                >
+                <button id="botaoPesquisa" type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+        </header>
+
+        <main>
+            <section class="bannerPromocoes">
+                <p class="subtitulo">OFERTAS ESPECIAIS</p>
+
+                <h1>PROMOÇÕES DELICIOSAS!</h1>
+
+                <p>
+                    Seus doces favoritos com preços especiais.
+                    Aproveite nossas ofertas!
+                </p>
+
+                <a href="#listaPromocoes" class="botaoProdutos">
+                    CONFERIR OFERTAS ⟶
+                </a>
+            </section>
+
+            <section class="secaoPromocoes" id="listaPromocoes">
+                <h2>Ofertas da semana 🍬</h2>
+
+                <p class="descricaoPromocoes">
+                    Confira os produtos selecionados para deixar seu dia mais doce.
+                </p>
+
+                <div class="listaProdutos">
+
+                    <article class="produto-promocional"
+                        data-categoria="Brigadeiros"
+                        data-nome="Caixa de brigadeiros"
+                        data-preco="12.00">
+
+                        <div class="seloPromocao">OFERTA</div>
+
+
+                        <div class="informacoesProduto">
+                            <h3>Caixa de brigadeiros</h3>
+
+                            <p>Brigadeiros deliciosos para compartilhar.</p>
+
+                            <p class="precoAntigo">De: R$ 16,00</p>
+                            <p class="preco">Por: R$ 12,00</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="101"
+                                data-nome="Caixa de brigadeiros"
+                                data-preco="12.00">
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto-promocional"
+                        data-categoria="Biscoitos"
+                        data-nome="Cookies de chocolate"
+                        data-preco="9.00">
+
+                        <div class="seloPromocao">OFERTA</div>
+
+                        
+
+                        <div class="informacoesProduto">
+                            <h3>Cookies de chocolate</h3>
+
+                            <p>Biscoitos crocantes com gotas de chocolate.</p>
+
+                            <p class="precoAntigo">De: R$ 12,00</p>
+                            <p class="preco">Por: R$ 9,00</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="102"
+                                data-nome="Cookies de chocolate"
+                                data-preco="9.00">
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto-promocional"
+                        data-categoria="Donuts"
+                        data-nome="Donuts sortidos"
+                        data-preco="15.00">
+
+                        <div class="seloPromocao">OFERTA</div>
+
+                       
+
+                        <div class="informacoesProduto">
+                            <h3>Donuts sortidos</h3>
+
+                            <p>Uma seleção de donuts com coberturas variadas.</p>
+
+                            <p class="precoAntigo">De: R$ 20,00</p>
+                            <p class="preco">Por: R$ 15,00</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="103"
+                                data-nome="Donuts sortidos"
+                                data-preco="15.00">
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto-promocional"
+                        data-categoria="Bolos"
+                        data-nome="Bolo de morango"
+                        data-preco="22.00">
+
+                        <div class="seloPromocao">OFERTA</div>
+
+                       
+
+                        <div class="informacoesProduto">
+                            <h3>Bolo de morango</h3>
+
+                            <p>Bolo com sabor de morango para adoçar seu dia.</p>
+
+                            <p class="precoAntigo">De: R$ 28,00</p>
+                            <p class="preco">Por: R$ 22,00</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="104"
+                                data-nome="Bolo de morango"
+                                data-preco="22.00">
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p id="mensagemPromocoes" aria-live="polite"></p>
+            </section>
+
+            <section class="avisoPromocoes">
+                <h2>Aproveite enquanto durarem as ofertas!</h2>
+                <p>
+                    Os preços promocionais são exemplos e podem ser alterados
+                    conforme as condições da loja.
+                </p>
+                <a href="produtos.html" class="botaoProdutos">
+                    VER TODOS OS PRODUTOS ⟶
+                </a>
+            </section>
+        </main>
+
+        <footer>
+            <p>Dulcê</p>
+            <p>Um mundo de doces para você!</p>
+
+            <nav aria-label="Links do rodapé">
+                <a href="Index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="promocoes.html">Promoções</a>
+                <a href="login.html">Entrar / Cadastrar</a>
+            </nav>
+
+            <p>&copy; 2026 Dulcê. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+    <div id="janelaCarrinho" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloCarrinho">
+            <button class="fecharJanela" type="button" data-fechar="janelaCarrinho" aria-label="Fechar">×</button>
+
+            <h2 id="tituloCarrinho">Meu carrinho 🛒</h2>
+
+            <div id="itensCarrinho">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+
+            <p>Total: <strong id="totalCarrinho">R$ 0,00</strong></p>
+
+            <a href="carrinho.html" class="botaoProdutos">VER CARRINHO COMPLETO</a>
+        </section>
+    </div>
+
+    <div id="janelaUsuario" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloUsuario">
+            <button class="fecharJanela" type="button" data-fechar="janelaUsuario" aria-label="Fechar">×</button>
+
+            <h2 id="tituloUsuario">Dados do usuário</h2>
+
+            <p>Entre na sua conta para visualizar seus dados pessoais.</p>
+
+            <a href="login.html" class="botaoProdutos">ENTRAR / CADASTRAR</a>
+            <a href="configuracoes.html" class="linkPagina">MEU PERFIL</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

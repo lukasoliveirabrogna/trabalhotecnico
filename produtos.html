@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos | Dulcê</title>
+
+    <link rel="stylesheet" href="produtos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site">
+
+        <header>
+            <div id="icones">
+                <button id="configuracoes" type="button" aria-label="Dados do usuário" title="Dados do usuário">
+                    ⚙
+                </button>
+
+                <button id="carrinho" type="button" aria-label="Abrir carrinho" title="Carrinho de compras">
+                    🛒 <span id="quantidadeCarrinho">0</span>
+                </button>
+
+                <button id="modoTema" type="button" aria-label="Alternar tema" title="Alternar tema">
+                    ☾
+                </button>
+            </div>
+
+            <nav>
+                <ul id="menu">
+                    <li class="liMenu"><a href="Index.html">HOME</a></li>
+                    <li class="liMenu"><a href="sobre.html">SOBRE</a></li>
+                    <li class="liMenu"><a href="produtos.html">PRODUTOS</a></li>
+                    <li class="liMenu"><a href="promocoes.html">PROMOÇÕES</a></li>
+                    <li class="liMenu"><a href="login.html">ENTRAR</a></li>
+                    <li class="liMenu" id="cadastro"><a href="login.html#cadastro">CADASTRAR</a></li>
+                </ul>
+            </nav>
+
+            <form id="formPesquisa" role="search">
+                <input
+                    type="search"
+                    id="barraPesquisa"
+                    placeholder="Pesquise aqui seus doces favoritos..."
+                    maxlength="80"
+                    aria-label="Pesquisar doces"
+                >
+                <button id="botaoPesquisa" type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+        </header>
+
+        <main>
+            <section class="bannerProdutos">
+                <p class="subtitulo">NOSSO CATÁLOGO</p>
+                <h1>ENCONTRE SEU DOCE FAVORITO!</h1>
+                <p>Explore nossos sabores e escolha sua próxima delícia.</p>
+
+            </section>
+
+            <section class="catalogo">
+                <h2>Todos os nossos doces 🍬</h2>
+
+                <div class="filtros">
+                    <label for="filtroCategoria">Categoria:</label>
+
+                    <select id="filtroCategoria">
+                        <option value="todos">Todas as categorias</option>
+                        <option value="Bolos">Bolos</option>
+                        <option value="Balas">Balas</option>
+                        <option value="Biscoitos">Biscoitos</option>
+                        <option value="Brigadeiros">Brigadeiros</option>
+                        <option value="Donuts">Donuts</option>
+                    </select>
+                </div>
+
+                <div class="listaProdutos" id="listaProdutos">
+
+                    <article class="produto" data-categoria="Bolos" data-nome="Bolo de chocolate">
+                        <div class="imagemProduto">
+                            <img id="sixseven" src="f9f1409dce9a0c1634325f81612f6714.jpg" alt="">
+                        </div>
+
+                        <div class="informacoesProduto">
+                            <h3>Bolo de chocolate</h3>
+                            <p>Bolo macio e delicioso para adoçar seu dia.</p>
+                            <p class="preco">R$ 25,00</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="1"
+                                data-nome="Bolo de chocolate"
+                                data-preco="25.00"
+                            >
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto" data-categoria="Balas" data-nome="Balas sortidas">
+                        <div class="imagemProduto">
+                            <img id="sixseven" src="bala_de_goma_3061_1_e8db07180e422630c5d2c66990515fcc.webp" alt="">
+                        </div>
+
+                        <div class="informacoesProduto">
+                            <h3>Balas sortidas</h3>
+                            <p>Balas coloridas para quem ama sabores variados.</p>
+                            <p class="preco">R$ 8,00</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="2"
+                                data-nome="Balas sortidas"
+                                data-preco="8.00"
+                            >
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto" data-categoria="Biscoitos" data-nome="Cookies de chocolate">
+                        <div class="imagemProduto">
+                            <img id="sixseven" src="20200217_biscoito_materia.jpg" alt="">
+                        </div>
+
+                        <div class="informacoesProduto">
+                            <h3>Cookies de chocolate</h3>
+                            <p>Biscoitos crocantes com gotas de chocolate.</p>
+                            <p class="preco">R$ 12,00</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="3"
+                                data-nome="Cookies de chocolate"
+                                data-preco="12.00"
+                            >
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto" data-categoria="Brigadeiros" data-nome="Brigadeiros">
+                        <div class="imagemProduto">
+                            <img id="sixseven" src="images.jpg" alt="">
+                        </div>
+
+                        <div class="informacoesProduto">
+                            <h3>Brigadeiros</h3>
+                            <p>Docinhos tradicionais para qualquer ocasião.</p>
+                            <p class="preco">R$ 3,50</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="4"
+                                data-nome="Brigadeiros"
+                                data-preco="3.50"
+                            >
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto" data-categoria="Donuts" data-nome="Donut de chocolate">
+                        <div class="imagemProduto">
+                            <img id="sixseven" src="images (1).jpg" alt="">
+                        </div>
+
+                        <div class="informacoesProduto">
+                            <h3>Donut de chocolate</h3>
+                            <p>Um donut delicioso com cobertura de chocolate.</p>
+                            <p class="preco">R$ 7,00</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="5"
+                                data-nome="Donut de chocolate"
+                                data-preco="7.00"
+                            >
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="produto" data-categoria="Bolos" data-nome="Bolo de morango">
+                        <div class="imagemProduto">
+                            <img id="sixseven" src="Bolo-de-Morango-Cravejado-768x512.webp" alt="">
+                        </div>
+
+                        <div class="informacoesProduto">
+                            <h3>Bolo de morango</h3>
+                            <p>Uma combinação doce com sabor de morango.</p>
+                            <p class="preco">R$ 28,00</p>
+
+                            <button
+                                class="adicionarCarrinho"
+                                type="button"
+                                data-id="6"
+                                data-nome="Bolo de morango"
+                                data-preco="28.00"
+                            >
+                                ADICIONAR AO CARRINHO
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p id="mensagemProdutos" aria-live="polite"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Dulcê</p>
+            <p>Um mundo de doces para você!</p>
+
+            <nav aria-label="Links do rodapé">
+                <a href="Index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="promocoes.html">Promoções</a>
+                <a href="login.html">Entrar / Cadastrar</a>
+            </nav>
+
+            <p>&copy; 2026 Dulcê. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+    <div id="janelaCarrinho" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloCarrinho">
+            <button class="fecharJanela" type="button" data-fechar="janelaCarrinho" aria-label="Fechar">×</button>
+
+            <h2 id="tituloCarrinho">Meu carrinho 🛒</h2>
+
+            <div id="itensCarrinho">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+
+            <p>Total: <strong id="totalCarrinho">R$ 0,00</strong></p>
+
+            <a href="carrinho.html" class="botaoProdutos">VER CARRINHO COMPLETO</a>
+        </section>
+    </div>
+
+    <div id="janelaUsuario" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloUsuario">
+            <button class="fecharJanela" type="button" data-fechar="janelaUsuario" aria-label="Fechar">×</button>
+
+            <h2 id="tituloUsuario">Dados do usuário</h2>
+
+            <p>Entre na sua conta para visualizar seus dados pessoais.</p>
+
+            <a href="login.html" class="botaoProdutos">ENTRAR / CADASTRAR</a>
+            <a href="configuracoes.html" class="linkPagina">MEU PERFIL</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

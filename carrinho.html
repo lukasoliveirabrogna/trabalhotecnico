@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Carrinho | Dulcê</title>
+
+    <link rel="stylesheet" href="carrinho.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site">
+
+        <header>
+            <div id="icones">
+                <button id="configuracoes" type="button" aria-label="Dados do usuário" title="Dados do usuário">
+                    ⚙
+                </button>
+
+                <button id="carrinho" type="button" aria-label="Abrir carrinho" title="Carrinho de compras">
+                    🛒 <span id="quantidadeCarrinho">0</span>
+                </button>
+
+                <button id="modoTema" type="button" aria-label="Alternar tema" title="Alternar tema">
+                    ☾
+                </button>
+            </div>
+
+            <nav>
+                <ul id="menu">
+                    <li class="liMenu"><a href="Index.html">HOME</a></li>
+                    <li class="liMenu"><a href="sobre.html">SOBRE</a></li>
+                    <li class="liMenu"><a href="produtos.html">PRODUTOS</a></li>
+                    <li class="liMenu"><a href="promocoes.html">PROMOÇÕES</a></li>
+                    <li class="liMenu"><a href="login.html">ENTRAR</a></li>
+                    <li class="liMenu" id="cadastro"><a href="login.html#cadastroForm">CADASTRAR</a></li>
+                </ul>
+            </nav>
+
+            <form id="formPesquisa" role="search">
+                <input
+                    type="search"
+                    id="barraPesquisa"
+                    placeholder="Pesquise aqui seus doces favoritos..."
+                    maxlength="80"
+                    aria-label="Pesquisar doces"
+                >
+                <button id="botaoPesquisa" type="submit" aria-label="Pesquisar">⌕</button>
+            </form>
+        </header>
+
+        <main>
+            <section class="bannerCarrinho">
+                <p class="subtitulo">SEUS DOCES FAVORITOS</p>
+                <h1>MEU CARRINHO 🛒</h1>
+                <p>Confira seus produtos antes de finalizar o pedido.</p>
+            </section>
+
+            <section class="conteudoCarrinho">
+                <div class="tituloSecaoCarrinho">
+                    <h2>Seus produtos</h2>
+                    <a href="produtos.html" class="linkPagina">CONTINUAR COMPRANDO</a>
+                </div>
+
+                <div id="listaCarrinhoCompleto">
+                    <p>Seu carrinho está vazio. Que tal escolher alguns doces?</p>
+                    <a href="produtos.html" class="botaoProdutos">VER PRODUTOS</a>
+                </div>
+
+                <div class="resumoCarrinho">
+                    <h2>Resumo do pedido</h2>
+
+                    <div class="linhaResumo">
+                        <span>Subtotal</span>
+                        <span id="subtotalCarrinho">R$ 0,00</span>
+                    </div>
+
+                    <div class="linhaResumo">
+                        <span>Entrega</span>
+                        <span id="valorEntrega">A calcular</span>
+                    </div>
+
+                    <div class="linhaResumo total">
+                        <span>Total</span>
+                        <strong id="totalCarrinhoPagina">R$ 0,00</strong>
+                    </div>
+
+                    <button type="button" id="finalizarCompra" class="botaoFinalizar">
+                        FINALIZAR PEDIDO
+                    </button>
+
+                    <p id="mensagemCarrinho" aria-live="polite"></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Dulcê</p>
+            <p>Um mundo de doces para você!</p>
+
+            <nav aria-label="Links do rodapé">
+                <a href="Index.html">Início</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="produtos.html">Produtos</a>
+                <a href="promocoes.html">Promoções</a>
+                <a href="login.html">Entrar / Cadastrar</a>
+            </nav>
+
+            <p>&copy; 2026 Dulcê. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+    <div id="janelaCarrinho" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloCarrinho">
+            <button class="fecharJanela" type="button" data-fechar="janelaCarrinho" aria-label="Fechar">×</button>
+
+            <h2 id="tituloCarrinho">Meu carrinho 🛒</h2>
+
+            <div id="itensCarrinho">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+
+            <p>Total: <strong id="totalCarrinho">R$ 0,00</strong></p>
+
+            <a href="carrinho.html" class="botaoProdutos">VER CARRINHO COMPLETO</a>
+        </section>
+    </div>
+
+    <div id="janelaUsuario" class="janelaFundo" hidden>
+        <section class="janela" role="dialog" aria-modal="true" aria-labelledby="tituloUsuario">
+            <button class="fecharJanela" type="button" data-fechar="janelaUsuario" aria-label="Fechar">×</button>
+
+            <h2 id="tituloUsuario">Dados do usuário</h2>
+
+            <p>Entre na sua conta para visualizar seus dados pessoais.</p>
+
+            <a href="login.html" class="botaoProdutos">ENTRAR / CADASTRAR</a>
+            <a href="configuracoes.html" class="linkPagina">MEU PERFIL</a>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+<script src="pedido.js"></script>
+</body>
+</html>
